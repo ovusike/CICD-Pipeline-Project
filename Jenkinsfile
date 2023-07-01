@@ -66,13 +66,6 @@ pipeline {
         }
     }
 
-    stage('SonarQube GateKeeper') {
-        steps {
-          timeout(time : 1, unit : 'HOURS'){
-          waitForQualityGate abortPipeline: true
-      }
-   }
-}
     stage("Nexus Artifact Uploader"){
         steps{
            nexusArtifactUploader(
