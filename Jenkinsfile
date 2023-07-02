@@ -57,9 +57,9 @@ pipeline {
                 withCredentials([string(credentialsId: 'SonarQube-Token', variable: 'SONAR_TOKEN')]) {
                 sh '''
                 mvn sonar:sonar \
-              -Dsonar.projectKey=sonarqube \
-              -Dsonar.host.url=http://3.87.226.164:9000 \
-              -Dsonar.login=e76c8e6b6ad809fc144d09ea246d380f6bc1e36c
+              -Dsonar.projectKey=ovus \
+              -Dsonar.host.url=http://44.208.166.228:9000 \
+              -Dsonar.login=d92452e68d599fbfc21a87c1cc3a114cec0b7bdd
               '''
                 }
             }
