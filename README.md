@@ -48,6 +48,8 @@
     - Key pair: Select or create a new keypair
     - User data (Copy the following user data): https://github.com/avinashmamidi/realworld-cicd-pipeline-project/blob/45b4334385ca5fc304188863fb80c9f88c2de491/scripts/install-nexus.sh
     - Launch Instance
+  
+klhfahalhlfahglahglaghagl
 
 5) EC2 (Dev/Stage/Prod)
     - Create 3 Amazon Linux 2 VM instance and call them (Names: Dev-Env, Stage-Env and Prod-Env)
