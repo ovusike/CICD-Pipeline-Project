@@ -57,11 +57,11 @@ pipeline {
                 withCredentials([string(credentialsId: 'SonarQube-Token', variable: 'SONAR_TOKEN')]) {
                 sh '''
                 mvn clean verify sonar:sonar \
-              -Dsonar.projectKey=ovus \
-              -Dsonar.projectName='ovus' \
-              -Dsonar.host.url=http://172.17.240.1:9000 \
-              -Dsonar.token=sqp_2d5feae15fb9dffcf705fd5adc2105a014a87772
-              '''
+              -Dsonar.projectKey=nikky \
+              -Dsonar.projectName='nikky' \
+              -Dsonar.host.url=http://localhost:9000 \
+              -Dsonar.token=sqp_5b3c0df56579e7271ca5a140203b9baf6026ea89
+               '''
                 }
             }
         }
