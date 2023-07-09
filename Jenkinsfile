@@ -59,7 +59,7 @@ pipeline {
                 mvn clean verify sonar:sonar \
               -Dsonar.projectKey=ovus \
               -Dsonar.projectName='ovus' \
-              -Dsonar.host.url=http://172.21.160.1:9000 \
+              -Dsonar.host.url=http://172.17.240.1:9000 \
               -Dsonar.token=sqp_2d5feae15fb9dffcf705fd5adc2105a014a87772
               '''
                 }
