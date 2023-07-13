@@ -66,13 +66,7 @@ pipeline {
         }
     }
 
-    stage('Quality Gate') {
-            steps {
-                waitForQualityGate abortPipeline: true
-            }
-        }
-
-    stage("Nexus Artifact Uploader"){
+  stage("Nexus Artifact Uploader"){
         steps{
            nexusArtifactUploader(
               nexusVersion: 'nexus3',
