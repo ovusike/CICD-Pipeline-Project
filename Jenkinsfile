@@ -58,7 +58,7 @@ pipeline {
                 sh '''
                     mvn sonar:sonar \
                   -Dsonar.projectKey=SonarQube \
-                  -Dsonar.host.url=http://3.85.162.103:9000 \
+                  -Dsonar.host.url=http://172.31.82.141:9000 \
                   -Dsonar.login=0ec26ac93e5d10066b3d947734c6bed55f76b8b5
                 '''
                 }
@@ -71,7 +71,7 @@ pipeline {
            nexusArtifactUploader(
               nexusVersion: 'nexus3',
               protocol: 'http',
-              nexusUrl: '18.212.57.93:8081',
+              nexusUrl: '172.31.94.109:8081',
               groupId: 'webapp',
               version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
               repository: 'maven-project-releases',  //"${NEXUS_REPOSITORY}",
