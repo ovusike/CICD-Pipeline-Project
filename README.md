@@ -312,6 +312,8 @@ cd /opt/splunk/bin
         - **Slack Notification**
         - **Nexus Artifact Uploader**
         - **Build Timestamp (Needed for Artifact versioning)**
+        - Prometheus (prometheus endpoint for jenkins)
+        - CloudBees Disk Usage Simple Plugin
     - Once all plugins are installed, select **Restart Jenkins when installation is complete and no jobs are running**
     ![PluginInstallation!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%2010.07.32%20PM.png)
 
