@@ -11,7 +11,7 @@
       copy:
         src: "{{ src_path }}"
         dest: "{{ dest_path }}"
-        owner: ansibleadmin
-        group: ansibleadmin
+        owner: ansadmin
+        group: ansadmin
         mode: 0644
 
